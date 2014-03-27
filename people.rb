@@ -1,24 +1,17 @@
-class Person  # create parent class Person
-	def initialize(name)
-		@name = name
-	end
-
-	def display
-		puts "Hello my name is #{name}."
-	end
-end
-n = Person.new
-
-class Student  # create class Student with method learn
-	def learn
+class Student	#create class Student
+	def learn	#method learn which returns quote
 		puts "I get it!"
 	end
 end
 
-class Instructor # create class Instructor with method teach
-	def teach
+s = Student.new
+s.learn
+
+class Instructor	#create class Instructor
+	def teach		#method learn which returns quote
 		puts "Everything in Ruby is an Object."
 	end
 end
 
-
+i = Instructor.new
+i.teach
